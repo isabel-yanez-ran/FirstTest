@@ -1,20 +1,173 @@
-#header{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    padding: 50px;
-    text-align: center;
-    background-color: #0d478f;
+/* ESTILOS GENERALES PARA EL CUERPO */
+
+body {
+    font-family: "Poppins", sans-serif; 
+    /*Cambia el tipo de letra en toda la página*/
+
+    background-image: url(https://i.pinimg.com/736x/51/ec/d7/51ecd728bb1f3c5c5578f8ce92b6e476.jpg);
+    /*Imagen de fondo para toda la página*/
+    
+    color: #333; 
+    /*Color del texto*/
+    
+    margin: 0; 
+    /*Elimina los márgenes predeterminados del navegador*/
+}
+
+/* ENCABEZADO (HEADER) */
+
+header {
+    background: linear-gradient(90deg, #1a237e, #283593); 
+    /*Crea un degradado azul oscuro de izquierda a derecha*/
+    
+    color: white; 
+    /*El texto dentro del encabezado será blanco*/
+    
+    padding: 1em; 
+    /*Agrega espacio interno para que el texto no quede pegado al borde*/
+
+    margin: 15px;
+    /*Espacio exterior*/
+    
+    text-align: center; 
+    /*Centra el texto*/
+}
+
+/* NAVEGACIÓN (MENÚ) */
+
+.navBar {
+    display: flex; 
+    /*Cada elemento queda organizado horizontalmente en la página ahorrando espacio*/
+    
+    justify-content: center; 
+    /*Centra los elementos dentro de la barra, osea que los pone en medio de la página*/
+
+    font-family: cursive;
+    
+    background-color: #3949ab; 
+    /*Fondo azul para la barra de navegación */
+    
+    list-style: none; 
+    /*Elimina los puntos de lista predeterminados evitando que se vea la lista como tal*/
+    
+    padding: 0; 
+    /*Elimina el espacio interior de la lista, lo junta para que no se vea mal*/
+    
+    margin: 0; 
+    /*Elimina el espacio exterior de la lista pues es el margen*/
+}
+
+.navBar li a {
+    display: block; 
+    /*Hace que todo el enlace se comporte como un bloque (clickeable en toda el área)*/
+    
+    padding: 1em; 
+    /*Añade espacio alrededor del texto de los enlaces haciendo función de separador*/
+    
+    color: #bec3df; 
+    /*Color del texto del enlace*/
+    
+    text-decoration: none; 
+    /*Quita el subrayado predeterminado de los enlaces*/
+}
+
+.navBar li a:hover {
+    background-color: #5c6bc0; 
+    /* Cambia el color de fondo cuando el cursor pasa encima */
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.flex-container {
+    display: flex; 
+    /*Distribuye los elementos (los capitulos no se juntan)*/
+    
+    flex-direction: column; 
+    /*Coloca las secciones una debajo de otra (verticalmente)*/
+    
+    gap: 20px; 
+    /*Espacio entre las secciones*/
+    
+    padding: 2em; 
+    /*Espacio interno del los bordes*/
+    
+    max-width: 800px; 
+    /*da un limite de ancho que permite mejor legibilidad y que no se vea apretado*/
+
+    margin: auto; 
+    /*Centra el contenido en la página*/
+}
+
+/* Cada capítulo o sección */
+
+section {
+    background: rgb(170, 231, 233); 
+    /*Fondo para diferenciar los capitulos del fondo general*/
+    
+    padding: 1.5em; 
+    /*Espacio interno para que el texto no este pegado a los bordes de su sección*/
+    
+    border-radius: 10px; 
+    /*Bordes redondeados y más comodos de ver*/
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.877); 
+    /*Sombra suave debajo de cada caja para dar profundidad*/
+}
+
+/* TEXTO DESTACADO */
+
+.destacado {
+    color: #d32f2f; 
+    /*Rojo intenso para resaltar*/
+    
+    font-weight: bold; 
+    /*Texto en negritas*/
+}
+
+.try{
+    text-decoration: none; 
+    /*Quita el subrayado predeterminado de los enlaces*/
+    
+    color: blueviolet; 
+    /*Color del texto del enlace*/
+
+    font-family: cursive;
+    /*Cambia la fuente a cursiva*/
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center; 
+    /*Centra el texto dentro del pie*/
+    
+    padding: 1em; 
+    /*Espacio interior*/
+
+    margin: 15px;
+    /*Espacio exterior*/
+    
+    background-color: #1a237e; 
+    /*Mismo tono azul que el encabezado*/
+    
+    color: white; 
+    /*Texto blanco para diferenciar*/
+}
+
+/* ESTILOS APARTE*/
+
+p {
+    font-family: cursive;
+    /*Cambia la fuente a cursiva*/
+
+    font-style: italic;
+    /*Texto en cursiva*/
 }
 
 h1{
-    color: #250997;
-    font-family: cursive;
-}
+    font-family: 'Times New Roman', Times, serif;
+    /*Cambia la fuente a Times New Roman*/
 
-.newBar{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #207ace;
+    font-size: 3em;
+    /*Aumenta el tamaño del texto del título*/
 }

@@ -17,7 +17,7 @@ body {
 /* ENCABEZADO (HEADER) */
 
 header {
-    background: linear-gradient(90deg, #1a237e, #283593); 
+    background: linear-gradient(90deg, #141b6b, #283593); 
     /*Crea un degradado azul oscuro de izquierda a derecha*/
     
     color: white; 

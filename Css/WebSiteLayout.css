@@ -171,3 +171,55 @@ h1{
     font-size: 3em;
     /*Aumenta el tamaño del texto del título*/
 }
+
+
+
+
+/* -------------------------
+   ESTILOS PARA MODO OSCURO
+   ------------------------- */
+
+.modo-oscuro {
+    background-color: #0a0f2d !important; 
+    color: #f5d36b !important;            
+}
+
+.modo-oscuro header {
+    background: linear-gradient(90deg, #001d3d, #003566);
+    color: gold;
+}
+
+.modo-oscuro section {
+    background-color: #001a33;
+    color: #f5d36b;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+}
+
+.modo-oscuro .navBar {
+    background-color: #002f60;
+}
+
+.modo-oscuro .navBar li a {
+    color: gold;
+}
+
+.modo-oscuro footer {
+    background-color: #00214d;
+    color: gold;
+}
+
+/* Botón modo oscuro */
+#modoOscuroBtn {
+    padding: 10px 15px;
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#modoOscuroBtn:hover {
+    background-color: #283593;
+}
+

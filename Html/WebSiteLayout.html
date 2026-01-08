@@ -1,15 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html> 
+<!-- Indica que este documento utiliza la versión HTML5 -->
+<html lang="es">
+<!-- Abre el documento HTML y especifica que el contenido está en español -->
+
 <head>
-    <title>WebSiteLayout</title>
-    <link rel="stylesheet" href="..\WebSiteLayout\Css\WebSiteLayout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>The legend of Zelda</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+     <link rel="stylesheet" href="../Css/WebSiteLayout.css">
+     <!-- Conecta con un CSS -->
 </head>
-<body>
-    <header id="header"><h1>Around The World</h1></header>
-    <ul class="newBar">
-        <li>Pagina 1</li>
-        <li>Pagina 2</li>
-        <li>Pagina 3</li>
-    </ul>
+
+<body> <!-- Cuerpo del documento: todo el contenido visible en la página -->
+    <header> <!-- Sección de encabezado: incluye el título principal y la barra de navegación -->
+        <h1 class="titulo">The legend of Zelda</h1>
+        <nav>  <!-- Contenedor semántico para la navegación, puede servirnos de separador -->
+            <ul class="navBar">
+                <!-- Lista desordenada que sirve como menú -->
+                <li><a target="_blank" href="https://youtu.be/1V_xRb0x9aw?si=79_s0U5rJBnXa3cV">Página 1</a></li>
+                <!-- Cada elemento de la lista es un enlace -->
+                <li><a target="_blank" href="https://youtu.be/D_ePUSOXo5U?si=8aH4E5NczJIV9MDh">Página 2</a></li>
+                <li><a target="_blank" href="https://youtu.be/QNYT9wVwQ8A?si=53i-O-9n2Oa1QjP7">Página 3</a></li>
+            </ul>
+             <button id="modoOscuroBtn">Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main class="flex-container">
+        <!-- contiene lo principal de toda la página -->
+        
+        <section>
+            <!-- Primera sección que separa el capítulo -->
+            <h2 class="subtitulo">Origen de la saga</h2>
+            <p>
+                El origen de la saga puede tratarse con dos maneras posibles, la primera de forma personal del creador de la serie y la otra dentro de este mismo universo propiamente.
+                La primera de ellas es la que nos cuenta Shigeru Miyamoto, creador de la saga, quien se inspiró en sus propias experiencias de infancia.
+                Miyamoto creció en una zona rural de Kioto, Japón, donde solía explorar los bosques y las cuevas cercanas a su casa. El decidio crear un juego que capturara la sensación de aventura y descubrimiento que él experimentó durante su niñez.
+                La segunda forma de tratar el origen de la saga es dentro del propio universo de Zelda. Aqui muchos apoyan el inicio en el uego de the legend of zelda skyward sword, donde se nos cuenta la historia de los primeros héroes y villanos que dieron origen a la lucha eterna entre el bien y el mal en el reino de Hyrule. Sin embargo dentro de esta historia, hay un pasado anterior a ello pues hay un manga donde se nos cuenta de una princesa que pide ayuda a un prisionero para vencer al mal y pese fallar en matarlo, sus acciones terminaron abriendo paso a la historia de skyward
+            </p>
+            <div style="text-align: center;">
+            <img src="https://i.pinimg.com/1200x/64/b2/7c/64b27c2a6de7581d35d4e23646defbff.jpg" width="600">
+        </div>
+        </section>
+
+        <section>
+            <!-- Segunda sección de separación de capítulo -->
+            <h2>¿De qué trata el juego?</h2>
+            <p>
+                La historia de la saga de The Legend of Zelda gira en torno a las aventuras de un joven héroe llamado Link, quien debe rescatar a la princesa Zelda y proteger el reino de Hyrule del malvado Ganon (también conocido como Ganondorf) y otras amenazas. Su tarea principal es salvar a la princesa, vencer o sellar a ganon o a sus subitos o representación. <span class="destacado">La razón detras del nombre de Zelda es debido a la escritora Zelda Fitzgerald, esposa del famoso escritor F. Scott Fitzgerald</span>, a quien Miyamoto admiraba y quien el creia, era un nombre precioso, el nombre de <span class="destacado">link o "vinculo" se debe a que el personaje sirve como un vínculo entre el jugador y el mundo del juego.
+                </span>
+               Dentro de cada entregua, pese a ser una historia similar, siempre hay cambios y nuevas mecanicas que lo hacen refrescante y muy disfrutable, como la inclusión de nuevas armas, habilidades y la exploración de diferentes entornos y épocas dentro del universo de Zelda. Estas historias reflejan varias enseñansas que link aprende y por lo tanto nosotros como jugadores adoptamos.
+                <!-- "span" se usa para resaltar una parte del texto aplicando una clase especial -->
+            </p>
+            <div style="text-align: center;">
+                <img src="https://agnautacouture.com/wp-content/uploads/2015/10/zelda-sayre-fitzgerald1.jpg" width="250">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página con derechos de autor y contacto -->
+        <p>© 2025 The legend of Zelda</p>
+        <address>
+            <!-- Proporciona información de contacto -->
+            Contacto: <a class="try" href="mail to:akirawendler@gmail.com">akirawendler@gmail.com</a>
+            <!-- "mail to:" abre directamente el programa de correo al hacer clic -->
+        </address>
+    </footer>
+
+    <script src="../JavaScript/ForPage.js"></script>
+
 </body>
 </html>
